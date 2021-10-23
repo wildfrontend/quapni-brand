@@ -1,0 +1,33 @@
+.quapni-header {
+  min-height: 3rem;
+  padding: 1rem;
+
+  background-color: transparent;
+  position: fixed;
+  left: 0;
+  width: calc(100vw - 5rem);
+  max-width: $max-desktop-width;
+  z-index: 999;
+}
+
+.quapni-header .logo {
+  height: 3em;
+  width: 10rem;
+  background-color: black;
+}
+
+.quapni-sidemenu {
+  position: fixed;
+  right: 0;
+  width: 5rem;
+  height: 10rem;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  padding: 1rem;
+  z-index: 999;
+}
+
+.quapni-sidemenu .sidemenu {
+  width: 3rem;
+  height: 3rem;
+  background-color: red;
+}
