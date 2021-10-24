@@ -1,9 +1,10 @@
 @import "./helper/screen";
 @import "./helper/color";
 @import "./layout/sidebar";
-@import "./layout/header"; 
+@import "./layout/header";
 @import "./layout/footer";
 @import "./pages/home";
+@import "./pages/logo";
 
 html {
   font-size: 16px;
@@ -19,6 +20,6 @@ body {
   margin: 0;
 }
 
-main{
+main {
   background-color: $color-efefef;
 }
