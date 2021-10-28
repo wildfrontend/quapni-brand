@@ -1,11 +1,11 @@
-const { watch, src,series, dest, parallel } = require("gulp");
+const { watch, src, series, dest, parallel } = require("gulp");
 const browserSync = require("browser-sync").create();
 const bundlePath = "./dist";
 const del = require("del");
 const gulpSass = require("gulp-sass");
 const rename = require("gulp-rename");
-const package = require("./package.json")
-const run = require('gulp-run')
+const package = require("./package.json");
+const run = require("gulp-run");
 
 // Watch HTML Files
 function html() {
@@ -15,21 +15,26 @@ function html() {
 }
 
 function tailwindCssBuild() {
-  return run("NODE_ENV=production npx tailwindcss -o ./dist/styles/tailwind.css").exec()
+  return run(
+    "NODE_ENV=production npx tailwindcss -o ./dist/styles/tailwind.css"
+  ).exec();
 }
 
 function tailwindCss() {
-  return run("npx tailwindcss -o ./dist/styles/tailwind.css").exec()
+  return run("npx tailwindcss -o ./dist/styles/tailwind.css").exec();
 }
 
 // Compile and Minify Img
 function images() {
-  return src("./assets/images/*")
-    .pipe(dest(`${bundlePath}/images`));
+  return src("./assets/images/*").pipe(dest(`${bundlePath}/images`));
 }
 // Compile Svg Icons
 function icons() {
   return src("./assets/icons/*.svg").pipe(dest(`${bundlePath}/icons`));
+}
+
+function styles() {
+  return src("./assets/styles/*.css").pipe(dest(`${bundlePath}/styles`));
 }
 
 // Compile SCSS/SASS to CSS
@@ -64,5 +69,11 @@ function server() {
 }
 
 exports.clean = clean;
-exports.build = series(clean, parallel(html, scss, tailwindCssBuild, images, icons));
-exports.start = series(clean, parallel(html, scss, tailwindCss, images, icons, server));
+exports.build = series(
+  clean,
+  parallel(html, scss, styles, tailwindCssBuild, images, icons)
+);
+exports.start = series(
+  clean,
+  parallel(html, scss, styles, tailwindCss, images, icons, server)
+);
