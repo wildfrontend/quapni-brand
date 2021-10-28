@@ -1,7 +1,36 @@
-.sidebar--active {
+.sidebar {
+  display: none;
+  transition: all 300ms ease-in-out;
+}
+
+.sidebar.--active {
+  display: block;
   position: absolute;
   width: 100vw;
   height: 100vh;
   background-color: $color-ffa73e;
   z-index: 9999;
+}
+
+.sidebar__menu {
+  // layout
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  // font
+  font-size: 3rem;
+  color: $color-ffffff;
+  text-align: right;
+  letter-spacing: 4.8px;
+}
+
+.sidebar__close{
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background-color: black;
+  width: 3rem;
+  height: 3rem;
 }

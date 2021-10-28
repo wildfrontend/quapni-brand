@@ -13,15 +13,25 @@
     <title>Quapni-Home</title>
   </head>
   <body>
-    <aside class="sidebar--active">
-      <ul>
-        <li>Logos</li>
-        <li>Color</li>
-        <li>Symbol</li>
-        <li>Typography</li>
-        <li>Illustration</li>
-      </ul>
-      <div class="sidebar__close"></div>
+    <aside id="sidebar" class="sidebar --active">
+      <div class="sidebar__content">
+        <ul class="sidebar__menu">
+          <li>Logos</li>
+          <li>Color</li>
+          <li>Symbol</li>
+          <li>Typography</li>
+          <li>Illustration</li>
+        </ul>
+        <div class="sidebar__close" onclick="closeSidebar()"></div>
+      </div>
     </aside>
   </body>
+  <script>
+    function openSidebar() {
+      document.getElementById("sidebar").classList.add("--active");
+    }
+    function closeSidebar() {
+      document.getElementById("sidebar").classList.remove("--active");
+    }
+  </script>
 </html>
