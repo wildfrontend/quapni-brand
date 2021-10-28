@@ -7,10 +7,15 @@
 @import "./pages/logo";
 
 html {
-  font-size: 16px;
+  //init
+  width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+
+  // font
+  font-family: "Noto Sans TC", serif;
+  font-size: 16px;
 }
 
 body {
