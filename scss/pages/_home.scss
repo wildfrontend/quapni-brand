@@ -1,35 +1,5 @@
-.quapni-landingpage {
+.home-landing {
   position: relative;
-  min-height: 50rem;
-  background-color: $color-7e5e4c;
-}
-.quapni-landingpage .slogan-block {
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  width: 30rem;
-  height: 20rem;
-  background-color: yellow;
-  z-index: 10;
-}
-
-.quapni-landingpage .background-img {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 20rem;
-  background-color: rgba($color: #000000, $alpha: 0.6);
-}
-
-.quapni-idea{
-    height: 20rem;
-    width: 100%;
-    background-color: $color-fce3ab;
-}
-
-.quapni-creator-talk{
-  width: 100%;
   min-height: 50rem;
   background-color: $color-7e5e4c;
 }

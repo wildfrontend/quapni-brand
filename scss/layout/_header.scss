@@ -1,33 +1,52 @@
-.quapni-header {
-  min-height: 3rem;
-  padding: 1rem;
-
-  background-color: transparent;
+.header {
   position: fixed;
-  left: 0;
-  width: calc(100vw - 5rem);
-  max-width: $max-desktop-width;
-  z-index: 999;
+  width: 100vw;
+  padding-top: 3rem;
+  z-index: 100;
 }
 
-.quapni-header .logo {
-  height: 3em;
+.header__content {
+  margin: 0 auto;
+  max-width: $max-content-width;
+  width: 100%;
+  display: flow-root;
+  height: 0px;
+}
+
+.header__logo {
+  float: left;
+}
+
+.header__logo__icon {
   width: 10rem;
+  height: 3rem;
   background-color: black;
 }
 
-.quapni-sidemenu {
-  position: fixed;
-  right: 0;
-  width: 5rem;
-  height: 10rem;
-  background-color: rgba($color: #000000, $alpha: 0.5);
-  padding: 1rem;
-  z-index: 999;
+.header__logo__slogan {
+  color: $color-ffffff;
+  font: normal normal 300 20px/40px PingFang TC;
+  text-align: left;
+  letter-spacing: 4px;
 }
 
-.quapni-sidemenu .sidemenu {
+.header__menu {
+  float: right;
+}
+
+.header__menu__icon {
   width: 3rem;
   height: 3rem;
-  background-color: red;
+  background-color: black;
+}
+
+.header__menu__slogan {
+  color: $color-ffffff;
+  font-size: 1.5rem;
+  font: normal normal 300 20px/29px PingFang TC;
+
+  letter-spacing: 2.8px;
+  writing-mode: vertical-lr;
+  line-height: 3rem;
+  padding-top: 1rem;
 }

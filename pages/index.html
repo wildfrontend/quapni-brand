@@ -13,7 +13,8 @@
     <title>Quapni-Home</title>
   </head>
   <body>
-    <aside id="sidebar" class="sidebar --active">
+    <!-- sidebar -->
+    <aside id="sidebar" class="sidebar">
       <div class="sidebar__content">
         <ul class="sidebar__menu">
           <li>Logos</li>
@@ -25,6 +26,22 @@
         <div class="sidebar__close" onclick="closeSidebar()"></div>
       </div>
     </aside>
+    <!-- sidebar -->
+    <!-- header -->
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo">
+          <div class="header__logo__icon"></div>
+          <div class="header__logo__slogan">QUAPNI OUTDOOR BRAND SITE</div>
+        </div>
+        <div class="header__menu">
+          <div class="header__menu__icon" onclick="openSidebar()"></div>
+          <div class="header__menu__slogan">BRAND ASSETS</div>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+    <div class="home-landing"></div>
   </body>
   <script>
     function openSidebar() {
