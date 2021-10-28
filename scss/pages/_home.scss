@@ -1,6 +1,40 @@
 .home-landing {
   position: relative;
-  min-height: 50rem;
+  min-height: 100vh;
   background-color: $color-7e5e4c;
 }
 
+.home-logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: $color-e1b87f;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+}
+
+.home-logo__content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.home-logo__title{
+  color:$color-ffffff;
+  font-size: 4rem;
+  letter-spacing: 4.8px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.home-logo__slogan{
+  color:$color-ffffff;
+  font-size: 2rem;
+  letter-spacing:  3.75px;
+  text-align: center;
+}
