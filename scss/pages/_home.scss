@@ -80,3 +80,65 @@
     width: 50%;
   }
 }
+
+// ANCHOR Company Target
+
+.home-company {
+  width: 100vw;
+  min-height: 30rem;
+  background-color: $color-7e5e4c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+  padding-bottom: 15%;
+  @include screen-md {
+    min-height: 50rem;
+  }
+}
+.home-company .block {
+  width: 80%;
+  @include screen-md {
+    width: 50%;
+  }
+}
+
+.home-company .block .title {
+  color: $color-ffa73e;
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  @include screen-md {
+    font-size: 1.25rem;
+  }
+}
+
+.home-company .block .content {
+  color: $color-fce3ab;
+  letter-spacing: 1.3px;
+  line-height: 1.5;
+  padding-top: 1rem;
+  font-weight: 300;
+  font-size: 0.875rem;
+
+  @include screen-md {
+    font-size: 1.25rem;
+  }
+}
+
+.home-company .block .avatar {
+  width: 100%;
+  display: flow-root;
+  padding: 5%;
+}
+
+.home-company .block .avatar .icon {
+  float: right;
+  width: 5rem;
+  height: 5rem;
+  @include screen-md {
+    width: 10rem;
+    height: 10rem;
+  }
+}
