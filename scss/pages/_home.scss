@@ -1,3 +1,4 @@
+// ANCHOR Land
 .home-landing {
   position: relative;
   height: 100vh;
@@ -50,4 +51,32 @@
   position: absolute;
   bottom: 0;
   z-index: 10;
+}
+
+// ANCHOR Introduction
+
+.home-introduction {
+  width: 100vw;
+  height: 20rem;
+  background-color: $color-fce3ab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include screen-md {
+    height: 30rem;
+  }
+}
+
+.home-introduction .content {
+  color: $color-7e5e4c;
+  letter-spacing: 1.3px;
+  text-justify: auto;
+  line-height: 2;
+  font-size: 0.875rem;
+  width: 80%;
+  @include screen-md {
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    width: 50%;
+  }
 }
