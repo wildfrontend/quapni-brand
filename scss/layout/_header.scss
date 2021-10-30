@@ -1,11 +1,11 @@
 .header {
   position: fixed;
-  width: 100vw;
+  width: 100%;
   padding-top: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   @include screen-md {
-    padding-top: 3rem;
+    padding-top: 1.5rem;
   }
   z-index: 100;
   display: flow-root;
