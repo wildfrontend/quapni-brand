@@ -26,11 +26,11 @@ function tailwindCss() {
 
 // Compile and Minify Img
 function images() {
-  return src("./assets/images/*").pipe(dest(`${bundlePath}/images`));
+  return src("./assets/images/**").pipe(dest(`${bundlePath}/images`));
 }
 // Compile Svg Icons
 function icons() {
-  return src("./assets/icons/*.svg").pipe(dest(`${bundlePath}/icons`));
+  return src("./assets/icons/**").pipe(dest(`${bundlePath}/icons`));
 }
 
 function styles() {

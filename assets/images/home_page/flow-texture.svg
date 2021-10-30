@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="540" viewBox="0 0 1920 540">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1675" data-name="Rectangle 1675" width="1920" height="540" transform="translate(0 540)" fill="#fff" stroke="#707070" stroke-linecap="round" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" transform="translate(0 -540)" clip-path="url(#clip-path)">
+    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="376.553" cy="147.662" rx="376.553" ry="147.662" transform="translate(482 1054.771)" fill="none" stroke="#fce3ab" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_8" data-name="Path 8" d="M-6.207,1283.993s331.494-255.4,633.06-268.963,589.705,142.529,835.638,128.831c351.522-19.578,734.349-420.4,734.349-420.4" transform="translate(-276.839 -141.966)" fill="none" stroke="#fce3ab" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_9" data-name="Path 9" d="M786.892,1190.013c-3.578-36.762-89.452-84.132-173-76s-152.579,62.239-149,99,80.452,17.131,164,9S790.47,1226.774,786.892,1190.013Z" transform="translate(-286.383 -194.828)" fill="none" stroke="#fce3ab" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_10" data-name="Path 10" d="M1634.864,1397.093s335.732-314.748,676-307.229" transform="translate(-390.864 -209.354)" fill="none" stroke="#fce3ab" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_11" data-name="Path 11" d="M1630.232,1085.181c1.843,22.062-33.5,45.2-83.231,49.358s-94.936-14.715-96.779-36.776,41.724-33.106,91.456-37.26S1628.39,1063.118,1630.232,1085.181Z" transform="translate(-386.301 -178.968)" fill="none" stroke="#fce3ab" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.313"/>
+    <path id="Path_12" data-name="Path 12" d="M2382.843,1194.066c4.6,26.346-19.064,32.821-78.455,43.2s-160.512,25.711-165.116-.635,63.811-72.181,123.2-82.558S2378.239,1167.719,2382.843,1194.066Z" transform="translate(-497.052 -195.453)" fill="none" stroke="#fce3ab" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
+</svg>
