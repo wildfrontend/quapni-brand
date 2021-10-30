@@ -1,14 +1,12 @@
 .header {
   position: fixed;
   width: 100vw;
-  padding-top: 5%;
+  padding-top: 0.25rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-
   @include screen-md {
     padding-top: 3rem;
   }
-
   z-index: 100;
   display: flow-root;
 }
@@ -60,4 +58,13 @@
 .header__close .icon {
   width: 100%;
   height: 100%;
+}
+
+// ANCHOR 第二種 Header
+.header.--second {
+  background-color: $color-7e5e4c;
+}
+
+.header.--second .header__content {
+  background-color: $color-7e5e4c;
 }
