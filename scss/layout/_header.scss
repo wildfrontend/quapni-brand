@@ -21,6 +21,9 @@
 .header__logo {
   float: left;
   width: 10rem;
+  @include screen-md {
+    width: auto;
+  }
 }
 
 .header__logo .icon {
@@ -37,6 +40,11 @@
   letter-spacing: 2.4px;
   font-size: 0.875rem;
   font-weight: 100;
+
+  @include screen-md {
+    font-size: 1.125rem;
+    letter-spacing: 4px;
+  }
 }
 
 .header__menu {

@@ -1,31 +1,53 @@
 .home-landing {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   background-color: $color-7e5e4c;
 }
 
-.home-logo {
+.home-landing__content {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../images/home_page/blob-shape.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include screen-md {
+    background-size: contain;
+  }
 }
 
-.home-logo__content {
+.home-landing__slogan {
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
 }
 
-.home-logo__title{
-  color:$color-ffffff;
-  font-size: 4rem;
-  letter-spacing: 4.8px;
+.home-landing__slogan .title {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: $color-ffffff;
+  font-size: 2.5rem;
+  letter-spacing: 4.9px;
   text-align: center;
-  font-weight: normal;
+  @include screen-md {
+    font-size: 3rem;
+  }
 }
 
-.home-logo__slogan{
-  color:$color-ffffff;
-  font-size: 2rem;
-  letter-spacing:  3.75px;
+.home-landing__slogan .desc {
+  color: $color-ffffff;
+  font-size: 1.25rem;
+  letter-spacing: 2.7px;
+  line-height: 2;
   text-align: center;
+  font-weight: 100;
+}
+
+.home-landing__flow {
+  position: absolute;
+  bottom: 0;
+  z-index: 10;
 }
