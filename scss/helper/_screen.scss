@@ -1,1 +1,9 @@
-$max-content-width:1280px;
+// screen size
+$max-content-width: 1280px;
+
+// media query
+@mixin screen-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
